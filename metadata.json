@@ -1,0 +1,7 @@
+{
+  "name": "AeroGlobal Travel & CTO Engineering Platform",
+  "description": "High-traffic travel booking platform with Go microservices, gRPC streams, Redis caching, global database sharding, multi-currency payment gateway, and real-time financial analytics dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

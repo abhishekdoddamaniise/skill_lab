@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #131314;
+    --bg-surface: #1e1f20;
+    --bg-surface-elevated: #282a2c;
+    --border-subtle: #37393b;
+    --border-focus: #7cacf8;
+    --accent-blue: #a8c7fa;
+    --accent-blue-active: #7cacf8;
+  }
+
+  body {
+    background-color: #131314;
+    color: #e3e3e3;
+    font-family: 'Google Sans Text', 'Google Sans', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  }
+  
+  code, pre, .font-mono, .tabular-nums {
+    font-family: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Material 3 custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #131314;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444746;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5e5e5e;
+}
+
+
