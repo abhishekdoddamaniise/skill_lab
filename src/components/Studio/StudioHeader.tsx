@@ -51,7 +51,7 @@ export const StudioHeader: React.FC<StudioHeaderProps> = ({
           </div>
           <div className="flex items-baseline gap-2">
             <span className="text-sm font-semibold tracking-tight text-white font-sans">
-              AeroGlobal Studio
+              1MS25IS002_assignment1 Studio
             </span>
             <span className="text-[11px] font-mono text-[#8e918f]">
               v2.4
