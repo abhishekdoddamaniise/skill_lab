@@ -53,7 +53,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenExport }) => {
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 text-white font-black text-sm shadow-md shadow-cyan-500/20">
               AG
             </div>
-            <span>AeroGlobal</span>
+            <span>1MS25IS002_assignment1</span>
           </a>
           <span className="hidden lg:inline text-xs text-slate-500 font-mono">
             Go 1.23 · gRPC · Redis · Spanner
