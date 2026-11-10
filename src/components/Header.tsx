@@ -41,7 +41,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenExport, onToggleSidebar })
         </button>
 
         <div className="flex items-center gap-2 text-xs font-mono">
-          <span className="text-slate-400 font-medium">aeroglobal</span>
+          <span className="text-slate-400 font-medium">1MS25IS002_assignment1</span>
           <span className="text-slate-600">/</span>
           <span className="text-slate-200 font-semibold">platform-core</span>
           <span className="text-slate-600">/</span>
