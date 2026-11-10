@@ -80,7 +80,7 @@ export const INITIAL_TRAVEL_ITEMS: TravelItem[] = [
   {
     id: 'fl-782',
     type: 'flight',
-    provider: 'AeroGlobal Airways',
+    provider: '1MS25IS002_assignment1 Airways',
     title: 'San Francisco to Tokyo Haneda',
     routeCode: 'SFO → HND · AG-782',
     origin: { city: 'San Francisco', code: 'SFO', terminal: 'Intl Terminal A' },
@@ -309,9 +309,9 @@ export const GRPC_METHODS: GrpcMethod[] = [
     },
     protoDefinition: `syntax = "proto3";
 
-package aeroglobal.inventory.v1;
+package 1MS25IS002_assignment1.inventory.v1;
 
-option go_package = "github.com/aeroglobal/inventory/pb;inventoryv1";
+option go_package = "github.com/1MS25IS002_assignment1/inventory/pb;inventoryv1";
 
 service InventoryService {
   rpc StreamInventoryUpdates(InventorySubscriptionRequest) 
@@ -342,7 +342,7 @@ package service
 import (
     "context"
     "time"
-    pb "github.com/aeroglobal/inventory/pb"
+    pb "github.com/1MS25IS002_assignment1/inventory/pb"
     "github.com/redis/go-redis/v9"
     "google.golang.org/grpc/codes"
     "google.golang.org/grpc/status"
@@ -401,9 +401,9 @@ func (s *InventoryServer) StreamInventoryUpdates(
     },
     protoDefinition: `syntax = "proto3";
 
-package aeroglobal.booking.v1;
+package 1MS25IS002_assignment1.booking.v1;
 
-option go_package = "github.com/aeroglobal/booking/pb;bookingv1";
+option go_package = "github.com/1MS25IS002_assignment1/booking/pb;bookingv1";
 
 service BookingEngine {
   rpc AcquireSeatHold(AcquireHoldRequest) returns (AcquireHoldResponse);
@@ -468,7 +468,7 @@ func (s *BookingServer) AcquireSeatHold(ctx context.Context, req *pb.AcquireHold
     },
     protoDefinition: `syntax = "proto3";
 
-package aeroglobal.payment.v1;
+package 1MS25IS002_assignment1.payment.v1;
 
 service PaymentService {
   rpc ExecuteMultiCurrencySettle(MultiCurrencyPaymentRequest) 
@@ -694,7 +694,7 @@ export const INITIAL_BOOKINGS: BookingRecord[] = [
     idempotencyKey: 'idemp_sec_99a8b7c4d1',
     gatewayTransactionId: 'ch_3Ns982La901Z',
     createdAt: '2026-09-25 21:14:02',
-    qrCodeToken: 'AEROGLOBAL:SFO:HND:4A:AG-982104:20261015',
+    qrCodeToken: '1MS25IS002_assignment1:SFO:HND:4A:AG-982104:20261015',
     grpcLatencyMs: 2.1,
     redisNodeLocked: 'redis-shard-01a',
   },
@@ -718,7 +718,7 @@ export const INITIAL_BOOKINGS: BookingRecord[] = [
     idempotencyKey: 'idemp_sec_109c918fa2',
     gatewayTransactionId: 'adyen_ch_88192014',
     createdAt: '2026-09-25 21:28:44',
-    qrCodeToken: 'AEROGLOBAL:ZRH:ZER:C1-01:AG-441920:20261015',
+    qrCodeToken: '1MS25IS002_assignment1:ZRH:ZER:C1-01:AG-441920:20261015',
     grpcLatencyMs: 1.8,
     redisNodeLocked: 'redis-shard-02a',
   },
@@ -742,7 +742,7 @@ export const INITIAL_BOOKINGS: BookingRecord[] = [
     idempotencyKey: 'idemp_sec_77b3109a44',
     gatewayTransactionId: 'ch_3Ps771Ka002Y',
     createdAt: '2026-09-25 21:39:10',
-    qrCodeToken: 'AEROGLOBAL:LHR:SIN:11A:AG-109283:20261015',
+    qrCodeToken: '1MS25IS002_assignment1:LHR:SIN:11A:AG-109283:20261015',
     grpcLatencyMs: 2.4,
     redisNodeLocked: 'redis-shard-01b',
   },
@@ -766,7 +766,7 @@ export const INITIAL_BOOKINGS: BookingRecord[] = [
     idempotencyKey: 'idemp_sec_55d8123c99',
     gatewayTransactionId: 'adyen_eu_99210411',
     createdAt: '2026-09-25 21:44:18',
-    qrCodeToken: 'AEROGLOBAL:CDG:JFK:3A:AG-882194:20261015',
+    qrCodeToken: '1MS25IS002_assignment1:CDG:JFK:3A:AG-882194:20261015',
     grpcLatencyMs: 1.9,
     redisNodeLocked: 'redis-shard-03a',
   },
