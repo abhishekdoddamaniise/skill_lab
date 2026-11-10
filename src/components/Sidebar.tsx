@@ -87,7 +87,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </div>
             <div className="truncate">
               <span className="text-sm font-bold tracking-tight text-white block">
-                AeroGlobal
+                1MS25IS002_assignment1
               </span>
               <span className="text-[10px] font-mono text-slate-400 block tracking-wider uppercase">
                 CTO Platform v4
