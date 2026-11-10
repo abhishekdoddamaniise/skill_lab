@@ -270,7 +270,7 @@ export const PlatformProvider: React.FC<{ children: ReactNode }> = ({ children }
       bookingRef,
       userId: `usr_${Math.random().toString(36).substring(2, 7)}`,
       userName: params.passengerName || 'Verified Traveler',
-      userEmail: params.passengerEmail || 'traveler@aeroglobal.io',
+      userEmail: params.passengerEmail || 'traveler@1MS25IS002_assignment1.io',
       itemId: item.id,
       itemTitle: item.title,
       travelType: item.type,
@@ -285,7 +285,7 @@ export const PlatformProvider: React.FC<{ children: ReactNode }> = ({ children }
       idempotencyKey,
       gatewayTransactionId: `txn_psp_${Math.random().toString(36).substring(2, 10)}`,
       createdAt: new Date().toISOString().replace('T', ' ').substring(0, 19),
-      qrCodeToken: `AEROGLOBAL:${item.origin.code}:${item.destination.code}:${seatsToBook.map((s) => s.seatNumber).join('+')}:${bookingRef}`,
+      qrCodeToken: `1MS25IS002_assignment1:${item.origin.code}:${item.destination.code}:${seatsToBook.map((s) => s.seatNumber).join('+')}:${bookingRef}`,
       grpcLatencyMs: latency,
       redisNodeLocked: 'redis-shard-01a',
     };
@@ -456,7 +456,7 @@ export const PlatformProvider: React.FC<{ children: ReactNode }> = ({ children }
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.setAttribute('download', `aeroglobal_financial_ledger_${new Date().toISOString().slice(0, 10)}.csv`);
+    link.setAttribute('download', `1MS25IS002_assignment1_financial_ledger_${new Date().toISOString().slice(0, 10)}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -465,7 +465,7 @@ export const PlatformProvider: React.FC<{ children: ReactNode }> = ({ children }
   const exportToJSON = () => {
     const data = {
       exportMetadata: {
-        platform: 'AeroGlobal Travel Core',
+        platform: '1MS25IS002_assignment1 Travel Core',
         exportedAt: new Date().toISOString(),
         totalTransactions: bookings.length,
         grossMerchandiseValueUSD: metrics.gmvUSD,
@@ -481,7 +481,7 @@ export const PlatformProvider: React.FC<{ children: ReactNode }> = ({ children }
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.setAttribute('download', `aeroglobal_executive_ledger_${new Date().toISOString().slice(0, 10)}.json`);
+    link.setAttribute('download', `1MS25IS002_assignment1_executive_ledger_${new Date().toISOString().slice(0, 10)}.json`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -489,7 +489,7 @@ export const PlatformProvider: React.FC<{ children: ReactNode }> = ({ children }
 
   const exportCTOReport = () => {
     const reportText = `========================================================================
-AEROGLOBAL TRAVEL PLATFORM - CTO EXECUTIVE & FINANCIAL AUDIT REPORT
+1MS25IS002_assignment1 TRAVEL PLATFORM - CTO EXECUTIVE & FINANCIAL AUDIT REPORT
 Generated: ${new Date().toUTCString()}
 Architecture: Go 1.23 Microservices + gRPC + Redis L1/L2 Cluster + CockroachDB
 ========================================================================
@@ -531,14 +531,14 @@ ${bookings
   .join('\n')}
 
 ========================================================================
-AeroGlobal Engineering & Infrastructure Group - Confidential Executive Report
+1MS25IS002_assignment1 Engineering & Infrastructure Group - Confidential Executive Report
 ========================================================================`;
 
     const blob = new Blob([reportText], { type: 'text/plain;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.setAttribute('download', `aeroglobal_cto_audit_report_${new Date().toISOString().slice(0, 10)}.txt`);
+    link.setAttribute('download', `1MS25IS002_assignment1_cto_audit_report_${new Date().toISOString().slice(0, 10)}.txt`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
